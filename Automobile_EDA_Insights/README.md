@@ -1,7 +1,7 @@
 ## Project Overview
 
 This project performs a comprehensive Exploratory Data Analysis (EDA) on the Automobile dataset to understand how different vehicle characteristics,
-such as, engine size, horsepower, body style, and fuel type—relate to market price.
+such as, engine size, horsepower, body style, and fuel consumption - relate to market price.
 
 The analysis focuses on uncovering key patterns, identifying outliers, and exploring correlations that help explain pricing behavior across different categories of cars.
 
@@ -15,7 +15,7 @@ The analysis focuses on uncovering key patterns, identifying outliers, and explo
 
 - **Topics covered**: Pricing, performance metrics, vehicle design attributes
 
-The dataset includes a variety of car specifications such as symboling, make, fuel type, aspiration, doors, body style, horsepower, engine size, peak RPM, and price
+The dataset includes a variety of car specifications such as make, fuel type, number of doors, body style, horsepower, engine size, MPG, and price
 — making it highly suitable for multivariate exploratory analysis.
 
 ## EDA Workflow
@@ -44,9 +44,9 @@ The analysis includes the following key steps:
 
 - Heatmaps to identify strongest numeric correlations
 
-- Scatter plots to visualise relationships between engine size, horsepower, and price
+- Scatter plots to visualise relationships between price and fuel economy 
 
-- Pairplots to examine how price varies across body styles
+- Pairplots to examine how price varies across body styles, horsepower and engine size
 
 4. **Categorical Feature Exploration**
 
@@ -54,20 +54,14 @@ The analysis includes the following key steps:
 
   - Fuel types
 
-  - Aspiration types
-
   - Body styles
-
-  - Door configurations
 
 ## Key Insights
 
-- Engine size and horsepower are the strongest predictors of vehicle price, showing a clear and consistent positive correlation.
+- Price strongly correlates with engine size and horsepower. 
 
-- Higher-performance vehicles form noticeable outlier clusters, especially in horsepower and price.
+- Engine capacity varies significantly by brand, with premium manufacturers prioritising performance over fuel economy.
 
-- Body style categories (sedan, hatchback, convertible, etc.) show distinct pricing patterns, with some segments consistently priced higher.
+- Expensive cars generally consume more fuel, while cheaper models are more efficient.
 
-- Fuel type and aspiration also influence price, indicating manufacturer design decisions tied to performance and market positioning.
-
-These findings highlight how vehicle engineering choices and design attributes drive pricing, offering valuable insights for early modelling decisions or business intelligence use cases.
+- Fuel economy shows a strong negative correlation with price: higher-priced vehicles tend to have worse MPG.
