@@ -126,9 +126,11 @@ I am passionate about data, enjoy solving complex problems and translating findi
 
 ## Contact
 
-If you'd like to connect, collaborate, or discuss any project here:
+If you'd like to connect, collaborate, or discuss any project or job opportunity here:
 
 Olena Manziuk
 lenamanziuk@gmail.com
+
 GitHub: this portfolio
+
 LinkedIn: linkedin.com/in/olenamanziuk
