@@ -1,4 +1,6 @@
-## Project Overview
+## Automobile Industry Insights
+
+## Exploratory Data Analysis
 
 This project performs a comprehensive Exploratory Data Analysis (EDA) on the Automobile dataset to understand how different vehicle characteristics,
 such as, engine size, horsepower, body style, and fuel consumption - relate to market price.
