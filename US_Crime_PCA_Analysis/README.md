@@ -1,6 +1,9 @@
+## US Crime Patterns
+
 ## PCA and Unsupervised Machine Learning Analysis
 
 ### Project Overview
+
 This project demonstrates an end-to-end **unsupervised machine learning workflow** with a focus on **Principal Component Analysis (PCA)** and **clustering techniques**. The notebook explores how dimensionality reduction can be used to better understand high-dimensional data and improve clustering performance and interpretability.
 
 The analysis follows a structured, data-science-oriented pipeline: data exploration, preprocessing, feature scaling, correlation analysis, PCA, and clustering.
