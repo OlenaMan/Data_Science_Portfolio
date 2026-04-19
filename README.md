@@ -1,136 +1,143 @@
-# Data_Science_Portfolio
-## Data Analytics · Machine Learning · Exploratory Analysis
+# North West London Health Inequalities Analysis
 
-Welcome to my Data Science Project Portfolio, a collection of hands-on projects demonstrating practical skills in data analytics, machine learning, exploratory data analysis (EDA), data visualisation, and Python, SQL programming.
-This repository highlights my ability to work with real-world datasets, uncover insights, build predictive models, and communicate results clearly and professionally.
+## Overview
 
-The portfolio includes work completed as part of the Imperial College London & HyperionDev Data Science Bootcamp as well as independent projects expanding my analytical and modelling capabilities.
+This project analyses health inequalities across North West London (NWL) boroughs, with a focus on:
 
-## What You’ll Find Here
+* health outcomes
+* preventive care
+* wider determinants
+* ethnicity (with emphasis on Black and African Caribbean communities)
 
-Each project includes:
+The aim is to build a **data-driven evidence base** to support decision-making for:
 
-- A structured Jupyter Notebook or Python code with clear workflow
+* Third Sector Together (3ST)
+* VCSE organisations
+* NHS Integrated Care Board (ICB) partners
 
-- README documentation explaining the problem, approach, and results
+---
 
-- Visualisations to communicate findings
+## Key Insights
 
-- Machine learning models where applicable
+* Health inequalities vary significantly across NWL boroughs
+* Different boroughs are driven by different mechanisms:
 
-## Project Categories
-1️⃣ Exploratory Data Analysis (EDA)
+  * prevention gaps
+  * service access issues
+  * structural determinants
+* Preventive care is a key differentiator of inequality
+* Brent shows the strongest overlap between:
 
-Data cleaning, feature exploration, featuer engineering, statistical summaries, visual storytelling.
+  * high inequality
+  * weak prevention
+  * high Black population share
+* Emerging risks are identified in boroughs such as Harrow
 
-2️⃣ Machine Learning Models
+---
 
-Regression, classification, feature engineering, model evaluation, insight extraction.
+## Borough Prioritisation
 
-3️⃣ Natural Language Processing (NLP)
+The analysis produces an actionable borough typology:
 
-Sentiment analysis, text classification, sequential neural networks.
+* **High priority (equity + prevention)**
+  → Brent, Hammersmith & Fulham
 
-4️⃣ SQL & Python Projects
+* **High priority (prevention / structural)**
+  → Hounslow
 
-Data extraction, relational databases, end-to-end workflows.
+* **Access / pathway focus**
+  → Westminster
 
-## Portfolio Structure and Content 
-- ### Automobile-EDA-Insights/
+* **Emerging risk**
+  → Harrow
 
-  - Exploratory analysis of automotive attributes and their impact on vehicle pricing
+* **Lower burden (monitor)**
+  → Hillingdon, Kensington & Chelsea
 
-  - Includes visualisation, correlation study, and key insights
+---
 
-- ### Bookstore-Inventory-Intelligence/
+## Project Structure
 
-  - Python + SQL project creating a functional inventory tracking system
+```plaintext
+notebooks/
+    End-to-end pipeline from ingestion to modelling
 
-  - Demonstrates database creation, querying, and automation
+data/
+    processed/     → intermediate curated datasets  
+    harmonised/    → final analysis-ready datasets  
 
-- ### Ames-Housing-Price-Forecasting/
+config/
+    mapping and reference files  
 
-  - Multiple Linear Regression model predicting property prices
+outputs/
+    final presentation and key outputs
+```
 
-  - Feature engineering, diagnostics, and performance evaluation
+---
 
-- ### Telco-Customer-Churn-Model/
+## Analytical Approach
 
-  - Classification models (Logistic Regression, Random Forest)
+* Multi-source data integration (ONS, Fingertips, GLA, GPPS)
+* Standardisation using z-scores for comparability
+* Direction alignment (higher = worse outcomes)
+* Composite inequality index at borough level
+* Separation of:
 
-  - Identifies churn drivers and produces actionable predictions
+  * outcomes
+  * determinants
+* Preventive care approximation using indicator classification
+* Trend analysis over time
+* Final synthesis into actionable borough categories
 
-- ### US-Crime-PCA-Analysis/
+---
 
-  - Principal Component Analysis on socio-economic crime indicators
+## Tools Used
 
-  - Dimensionality reduction + interpretability insights
+* Python (Pandas, NumPy)
+* Data visualisation (Matplotlib)
+* Jupyter Notebooks
 
-- ### Neural-Slogan-Generator/
+---
 
-  - Sequential neural network (NLP) generating marketing slogans
+## Outputs
 
-   - Demonstrates text vectorisation and deep-learning workflows
+* Borough-level inequality index
+* Preventive care analysis
+* Trend analysis
+* Actionable prioritisation framework
+* Executive presentation for stakeholders
 
-- ### Sentiment-Analysis-Product-Reviews/
+---
 
-  - spaCy NLP sentiment classifier for product review text
+## Data Sources
 
-  - Includes preprocessing, model pipeline, and evaluation
+All datasets used are publicly available, including:
 
-- ### EDA-Wine-Dataset-Insights/
+* Office for National Statistics (ONS)
+* Fingertips (OHID)
+* Greater London Authority (GLA)
+* GP Patient Survey (GPPS)
 
-  - Comprehensive EDA of wine reviews dataset (geography, pricing, quality)
+Data has been cleaned, harmonised, and aggregated for analysis.
 
-  - Covers missing-data handling, statistical summary, and visual insights
+---
 
-## Tools & Technologies
+## Limitations
 
-### Languages: Python, SQL
-### Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, spaCy
-### Techniques:
+* Results are **relative measures**, not absolute outcomes
+* Preventive care is based on **proxy indicators**
+* Limited availability of **ethnicity-disaggregated local data**
+* Findings indicate **patterns and signals**, not causality
 
-- Data Cleaning & Wrangling
+---
 
-- Exploratory Data Analysis (EDA)
+## Author
 
-- Feature Engineering
+This project was developed as part of a data science portfolio, demonstrating:
 
-- Machine Learning (Regression, Classification, NLP, PCA)
+* end-to-end data pipeline design
+* multi-source data integration
+* applied statistical modelling
+* translation of analysis into actionable insights
 
-- Data Visualisation & Insights
-
-- Model Evaluation
-
-- Database Design (SQLite)
-
-## Purpose of This Portfolio
-
-This repository reflects my journey transitioning into Data Analytics and Machine Learning.
-It showcases:
-
-- My analytical thinking
-
-- My ability to design and run end-to-end workflows
-
-- My skill in extracting insights from data
-
-- My understanding of modelling and evaluation
-
-- My commitment to clean, well-structured, interpretable work
-
-## About Me
-
-I am a data-driven professional with 10+ years of experience across industries, now transitioning into data analytics and machine learning. 
-I am passionate about data, enjoy solving complex problems and translating findings into meaningful outcomes.
-
-## Contact
-
-If you'd like to connect, collaborate, or discuss any project or job opportunity here:
-
-Olena Manziuk
-lenamanziuk@gmail.com
-
-GitHub: this portfolio
-
-LinkedIn: linkedin.com/in/olenamanziuk
+---
